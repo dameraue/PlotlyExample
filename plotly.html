@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <!-- head-->
+    <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h2>Projektanträge innerhalb des dig. Ökosystems</h2>
+    <!-- body -->
+    <div id='myDiv'></div>
+</body>
+<footer>
+    <!-- footer -->
+
+<script>
+data = [
+  {
+  type: 'scatterpolar',
+  r: [1, 2, 1, 5, 5],
+  theta: ['mein Account','Angebotstransparenz','Hilfe im Krankheitsfall', 'Prävention/Vorsorge', 'Gesundheitsfragen', 'Durchblick Pflege'],
+  fill: 'toself',
+  name: 'Dig. Case Management'
+  },
+  {
+  type: 'scatterpolar',
+  r: [5,
+  2,
+  3, 
+  2, 
+  1, 
+  5],
+  theta: ['mein Account',
+  'Angebotstransparenz',
+  'Hilfe im Krankheitsfall', 
+  'Prävention/Vorsorge', 
+  'Gesundheitsfragen', 
+  'Durchblick Pflege'],
+  fill: 'toself',
+  name: 'Biometrieverfahren'
+  },
+  {
+  type: 'scatterpolar',
+  r: [4,
+  5,
+  2, 
+  1, 
+  5, 
+  2],
+  theta: ['mein Account',
+  'Angebotstransparenz',
+  'Hilfe im Krankheitsfall', 
+  'Prävention/Vorsorge', 
+  'Gesundheitsfragen', 
+  'Durchblick Pflege'],
+  fill: 'toself',
+  name: 'ePA'
+  },
+  {
+  type: 'scatterpolar',
+  r: [2,
+  1,
+  1, 
+  2, 
+  2, 
+  3],
+  theta: ['mein Account',
+  'Angebotstransparenz',
+  'Hilfe im Krankheitsfall', 
+  'Prävention/Vorsorge', 
+  'Gesundheitsfragen', 
+  'Durchblick Pflege'],
+  fill: 'toself',
+  name: 'Beispielprojekt'
+  },
+  {
+  type: 'scatterpolar',
+  r: [5,
+  5,
+  2, 
+  1, 
+  1, 
+  2],
+  theta: ['mein Account',
+  'Angebotstransparenz',
+  'Hilfe im Krankheitsfall', 
+  'Prävention/Vorsorge', 
+  'Gesundheitsfragen', 
+  'Durchblick Pflege'],
+  fill: 'toself',
+  name: 'Strategische Ziele 2025'
+  }
+]
+
+layout = {
+  polar: {
+
+    radialaxis: {
+      visible: true,
+      range: [0, 5]
+    }
+  }
+}
+Plotly.newPlot("myDiv", data, layout)
+</script>
+</footer>
+
+</html>
